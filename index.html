@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head><link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elnoob Web 🔥</title>
@@ -50,5 +51,17 @@
     <audio autoplay loop>
         <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
     </audio>
-</body>
+</body><audio autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+<h2>Deja tu mensaje aquí 🔥👇</h2>
+<input type="text" id="mensaje" placeholder="Escribe algo">
+<button onclick="saludo()">Enviar</button>
+
+<script>
+  function saludo() {
+    let mensaje = document.getElementById("mensaje").value;
+    alert("Elnoob dice: " + mensaje);
+  }
+</script>
 </html>
